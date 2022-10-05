@@ -196,13 +196,14 @@ body {
     align-items: center;
 }
 input {
-    padding: 15px;
+    padding: 20px;
     background: transparent;
     border: 1px solid #585858;
     width: 500px;
     border-radius: 8px;
     outline: none;
     height: 8vh;
+    padding-left: 25px;
 }
 .submit {
     background-color: #2F80ED;
