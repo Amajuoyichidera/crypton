@@ -142,6 +142,8 @@ body {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 .btc {
     display: flex;
@@ -153,7 +155,7 @@ body {
     border-radius: 16px;
     border: 1px solid #585858;
     width: 260px;
-    height: 260px;
+    height: 240px;
 }
 .bit h2 {
     font-weight: 600;
@@ -171,7 +173,7 @@ body {
 .email {
     text-align: center;
     padding-top: 150px;
-    padding: 150px;
+    padding-bottom: 100px;
 }
 .email h2 {
     font-weight: 600;
@@ -217,6 +219,7 @@ input {
     border-radius: 8px;
     position: absolute;
     margin-left: 400px;
+    border: none;
 }
 .submit:hover {
     transform: scale(1.1);
@@ -299,13 +302,17 @@ figure {
     to {opacity: 1}
   }
 
+ .foot {
+    display: flex;
+    gap: 170px;
+ }
 
 
 
 
   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
   @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
+    .topnav a, .dropdown .dropbtn {
       display: none;
     }
     .topnav a.icon {
@@ -333,5 +340,98 @@ figure {
       display: block;
       width: 100%;
       text-align: left;
+    }
+   
+  }
+
+  @media screen and (max-width: 768px) {
+    .sec2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .sec2 {
+        padding-top: 15px;
+    }
+    .sec1 h1 {
+        font-size: 3vh;
+        width: 344px;
+        height: 84px;
+        line-height: 42px;
+    }
+    .sec2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .bit {
+        width: 343px;
+        height: 148px;
+    }
+    .bit h2 {
+        font-size: 2vh;
+    }
+    .num {
+        padding-left: 200px;
+        margin-top: -20px;
+    }
+    .vec {
+        margin-top: -60px;
+        width: 30vw;
+    }
+    .screen {
+        height: 3vh;
+    }
+    h3 {
+        font-size: 1.8vh;
+    }
+    .none {
+        display: none;
+    }
+    .grp {
+        height: 4vh;
+    }
+    .in {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* gap: 300px; */
+        padding: 10px;
+        padding-top: 20px;
+
+    }
+    input {
+        width: 80vw;
+        height: 6vh;
+    }
+    .submit {
+        margin-left: 10px;
+        margin-top: 70px;
+        border: none;
+    }
+    .email {
+        padding: 20px;
+        padding-bottom: 100px;
+        padding-top: 50px;
+    }
+    .email h2 {
+        font-size: 2vh;
+    }
+    footer {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .foot {
+        gap: 100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .group {
+        height: 4vh;
+    }
+    figure img {
+        height: 2vh;
+    }
+    .last p {
+        font-size: 1.5vh;
     }
   }
