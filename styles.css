@@ -365,6 +365,8 @@ figure {
     .bit {
         width: 343px;
         height: 148px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
     .bit h2 {
         font-size: 2vh;
